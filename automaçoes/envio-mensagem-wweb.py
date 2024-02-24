@@ -11,7 +11,7 @@ time.sleep(60)  # Espera 10 segundos para você escanear o código QR
 
 # Encontra o campo de pesquisa e insere o nome do contato/grupo
 contato = "Lucas Irmão"
-campo_pesquisa = driver.find_element_by_xpath('//div[@class="_3FRCZ copyable-text selectable-text"][@contenteditable="true"][@data-tab="3"]')
+campo_pesquisa = driver.find_element('xpath', '//div[@class="_3FRCZ copyable-text selectable-text"][@contenteditable="true"][@data-tab="3"]')
 campo_pesquisa.send_keys(contato)
 campo_pesquisa.send_keys(Keys.ENTER)
 
@@ -20,7 +20,7 @@ time.sleep(5)
 
 # Encontra o campo de mensagem e envia a mensagem desejada
 mensagem = "Teste Python"
-campo_mensagem = driver.find_element_by_xpath('//div[@class="_3FRCZ copyable-text selectable-text"][@contenteditable="true"][@data-tab="6"]')
+campo_mensagem = driver.find_element('xpath', '//div[@class="_3FRCZ copyable-text selectable-text"][@contenteditable="true"][@data-tab="6"]')
 campo_mensagem.send_keys(mensagem)
 campo_mensagem.send_keys(Keys.ENTER)
 
