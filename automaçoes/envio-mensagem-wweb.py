@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 # Inicializa o driver do Chrome (certifique-se de ter o ChromeDriver instalado)
-driver = webdriver.Chrome()
+driver = webdriver.edge()
 
 # Abre o WhatsApp Web
 driver.get("https://web.whatsapp.com/")
