@@ -32,7 +32,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 import urllib
 
-navegador = webdriver.Chrome()
+navegador = webdriver.Edge()
 navegador.get("https://web.whatsapp.com/")
 
 while len(navegador.find_elements_by_id("side")) < 1:
