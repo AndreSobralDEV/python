@@ -6,8 +6,17 @@ import time
 driver = webdriver.Edge()
 
 # Abre o WhatsApp Web
-driver.get("https://web.whatsapp.com/")
-time.sleep(60)  # Espera 10 segundos para você escanear o código QR
+try:
+    driver.get("https://web.whatsapp.com/")
+    time.sleep(60)  # Espera 10 segundos para você escanear o código QR
+except:
+    pass
+
+if not driver.get_cookies():
+    print("Por favor, escaneie o código QR do WhatsApp.")
+    time.sleep(20)
+    driver.get("https://web.whatsapp.com/")
+    time.sleep(10)
 
 # Encontra o campo de pesquisa e insere o nome do contato/grupo
 contato = "Lucas Irmão"
