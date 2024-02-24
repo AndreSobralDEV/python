@@ -7,7 +7,7 @@ driver = webdriver.Edge()
 
 # Abre o WhatsApp Web
 driver.get("https://web.whatsapp.com/")
-time.sleep(10)  # Espera 10 segundos para você escanear o código QR
+time.sleep(20)  # Espera 10 segundos para você escanear o código QR
 
 # Encontra o campo de pesquisa e insere o nome do contato/grupo
 search_box = driver.find_element_by_xpath('//div[@class="_2_1wd copyable-text selectable-text"][@contenteditable="true"][@data-tab="3"]')
