@@ -10,7 +10,7 @@ driver.get("https://web.whatsapp.com/")
 time.sleep(60)  # Espera 10 segundos para você escanear o código QR
 
 # Encontra o campo de pesquisa e insere o nome do contato/grupo
-search_box = driver.find_element_by_xpath('//div[@class="_1biMM _3sHED copyable-text selectable-text"][@contenteditable="true"][@data-tab="3"]')
+search_box = driver.find_element_by_xpath('//input[@class="_3FRCZ copyable-text selectable-text" and @data-tab="3"')
 search_box.send_keys("Lucas Irmão" + Keys.ENTER)
 
 # Espera um segundo para a conversa ser carregada
